@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #e1b382;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        picture {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+
+        video {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        audio {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>About Me</h1>
+
+        <picture>
+            <!-- Image for mobile devices -->
+            <source srcset="images.jpeg" media="(max-width: 600px)">
+            <!-- Image for tablets -->
+            <source srcset="images.jpeg" media="(max-width: 900px)">
+            <!-- Image for laptops and desktops -->
+            <source srcset="images.jpeg" media="(min-width: 901px)">
+            <!-- Fallback image for browsers that don't support <picture> -->
+            <img src="images.jpeg" alt="A picture that represents me">
+        </picture>
+
+        <h2>My Journey</h2>
+        <p>
+            I am passionate about technology and creativity. My journey began with a fascination for computers, and over time, I have honed my skills in various aspects of digital creation, from software development to multimedia design. This picture represents my evolving self, adapting to different devices and audiences just as I adapt to new challenges and opportunities.
+        </p>
+
+        <video controls>
+            <source src="https://youtu.be/XatllMSAahk?si=O_lhT5bohgvaZDqp" type="video/mp4">
+            <source src="https://youtu.be/XatllMSAahk?si=O_lhT5bohgvaZDqp" type="video/ogg">
+            <source src="https://youtu.be/XatllMSAahk?si=O_lhT5bohgvaZDqp" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>
+            The video above captures key moments of my life and career. It showcases the projects that have defined my path and the people who have inspired me along the way.
+        </p>
+
+        <audio controls>
+            <source src="#" type="audio/mp3">
+            <source src="#" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>
+            Music has always been a source of inspiration for me. The track above is one of my favorites, reflecting the rhythm and energy that drive my work every day.
+        </p>
+    </div>
+
+</body>
+</html>
